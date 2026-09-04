@@ -9,5 +9,7 @@ The first set of scripts is ready to download! Please test and use them!
 
 # Disclaimer
 
-These scripts are provided as is! No warranties and confers no rights! Use them on your own risk!
+This is a personal project and is not affiliated with, endorsed by, or supported by IBM or HCL. IBM, HCL, WebSphere, and HCL Connections are trademarks or registered trademarks of their respective owners.
+
+The scripts in this repository are provided to help administrators work with and configure HCL Connections environments. Use them at your own risk and test them in a non-production environment before applying them to production systems.
 
