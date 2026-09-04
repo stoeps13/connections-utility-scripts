@@ -1,4 +1,9 @@
 @echo off
+
+REM Author: Christoph Stoettner
+REM E-Mail: christoph.stoettner@stoeps.de
+REM License: Apache 2.0
+
 setlocal
 
 rem Run this script from a DB2 Command Window.
