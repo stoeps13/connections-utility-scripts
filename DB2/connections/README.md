@@ -20,11 +20,16 @@ Edit the export root in the script if required:
 
 Optional authentication:
 
-```bat set DB2_USER=source_user set DB2_PASSWORD=source_password ```
+```bat
+set DB2_USER=source_user 
+set DB2_PASSWORD=source_password 
+```
 
 Run:
 
-```bat db2export.bat ```
+```bat
+db2export.bat
+```
 
 For the final migration, stop or quiesce Connections/WebSphere first. Keep every generated file,
 including `db2move.lst`, IXF files, LOB files, and message files.
@@ -45,20 +50,31 @@ The script:
 
 It is destructive: it can drop target databases. Set the required confirmation variable:
 
-```bash export DROP_DATABASES=YES ```
+```bash 
+export DROP_DATABASES=YES 
+```
 
 Optional variables:
 
-```bash export ROOT=/opt/migration export DBSRC=6.0IFR1-connections.sql export
-DBTGT=8.0-connections.sql export BCKP=db2export export DB_USER=db2inst1 export
-DB_PASSWORD='password' ```
+```bash 
+export ROOT=/opt/migration 
+export DBSRC=6.0IFR1-connections.sql 
+export DBTGT=8.0-connections.sql 
+export BCKP=db2export 
+export DB_USER=db2inst1 export
+DB_PASSWORD='password' 
+```
 
 If `DB_PASSWORD` is not set, the script prompts for it.
 
 Run:
 
-```bash chmod 700 import-db2.sh sudo -iu db2inst1 cd /path/to/scripts DROP_DATABASES=YES
-./import-db2.sh 2>&1 | tee import-db2.log ```
+```bash 
+chmod 700 import-db2.sh 
+sudo -iu db2inst1 
+cd /path/to/scripts 
+DROP_DATABASES=YES ./import-db2.sh 2>&1 | tee import-db2.log 
+```
 
 ## Important notes
 
