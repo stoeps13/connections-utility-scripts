@@ -16,7 +16,9 @@ It:
 
 Edit the export root in the script if required:
 
-```bat set "EXPORT_ROOT=D:\migration\db2export" ```
+```bat 
+set "EXPORT_ROOT=D:\migration\db2export" 
+```
 
 Optional authentication:
 
