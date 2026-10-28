@@ -27,3 +27,12 @@ Copy this script to /etc/init.d/db2, it is a Script to start and stop DB2 as a s
 You only have to change the PATH variables within the script.
 
 Thanks to [Nico Meisenzahl](http://www.meisenzahl.org)
+
+## `add_adminuser.bat` -- Before migrating the databases
+
+Create the new administrator account at the operating-system level on the target machine.
+
+Then run this script on the source DB2 instance before backing up the databases. The script adds the new administrator to each database.
+
+The new instance uses a different administrator username. Completing these steps before backup and restore ensures that the new instance owner or administrator has access to the
+databases after migration.
